@@ -1,0 +1,37 @@
+NOdes: is a machine - physical or virtual on which Kubernetes is installed. its a worker machine on whic application is installed.
+there can be more than one NOdes
+
+Cluster: is a set of nodes grouped together. 
+
+Master: is another node and is responsible for managing the cluster.
+
+Components installed with Kubernetes:
+    - API Server - FE for Kubernetes
+    - etcd - distributed key value store. used when we have multiple nodes and multiple masters. used to store all data used to manage the cluster
+    - scheduler - distributing work or containers across multiple nodes. 
+    - controller - brain behind orchestration. it makes decision when a node goes down.
+    - container runtime - underlying software used to run containers . eg Docker
+    - Kublet - agent that runs on each node in a cluster. responsible for making sure that the containers are running in each node as expected.
+
+================================
+Master Nodes : Worker Nodes
+
+Master contains 
+    </> kube-apiserver
+    etcd
+    scheduler
+    controller
+
+Worker contains 
+    </> kublet
+    container runtime (docker)
+
+kubectl - kube command line tool
+    kubectl run = is used to deploy an application on the cluster
+    kubectl cluster-info = view info about cluster
+    kubectl get nodes = list all the nodes as part of a cluster
+
+
+
+
+

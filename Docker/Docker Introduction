@@ -1,0 +1,30 @@
+Docker helps developers build, share, run, and verify applications anywhere — without tedious environment configuration or management.
+
+
+Containers vs Virtual Machines
+
+Containers:
+    They contain the below components
+
+Containers (Apps, Libs, Deps)
+Docker
+OS
+H/W
+
+Virtual Machines:
+    They contain the below components
+
+Virtual Machines (Apps, Libs, Deps, OS)
+Hypervisor (ESX or some kind of virtualization)
+OS
+H/W
+
+
+-- Docker Hub / Docker Store
+docker run ansible
+docker run nodejs
+docker run mongodb
+
+Image: package or template. used to create one or more containers
+Containers: running images of instances that are isolated and have their own set of processes
+
