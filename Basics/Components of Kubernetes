@@ -1,0 +1,18 @@
+Control Plane : This is the brain of the Kubernetes cluster and manages the overall state of the system. 
+    It includes -
+        - API Server: Provides a REST API for the Kubernetes control plane and handles requests from various Kubernetes components and external clients.
+        - etcd: This is a distributed key-value store that stores the configuration data of the entire Kubernetes cluster.
+        - Controller Manager: This components ensures that thedesired state of the cluster is maintained by monitoring the state of various Kubernetes objects (e.g.,   ReplicaSets, Deployments, Services) and reconciling any differences.
+        - Scheduler: This component assigns Pods to worker nodes based on resource availability and other scheduling policies.
+        - Worker Nodes : These are the machines that run the application containers. Each worker node includes the following components:
+        - Kubelet: This component communicates with the API server to receive instructions and ensures that the containers are running correctly.
+        - Container Runtime: This is the software that runs the containerized applications (e.g., Docker, containerd).
+        - kube-proxy: This component handles network routing for services in the cluster
+        - Pod: A pod is the smallest deployable unit in Kubernetes and represents a single instance of a running process in the cluster. A pod can contain one or more containers.
+        - Container: A container is a lightweight, standalone executable package that contains everything needed to run an application, including code, runtime, system tools, and libraries.
+        - Service: A service is an abstraction that defines a set of pods and a policy for how to access them. Services provide a stable IP address and DNS name for a set of pods, allowing other parts of the application to access them.
+        - ReplicaSet: It ensures that a specified number of replicas of a pod are running at all times. It takes care of auto scaling of the replicas based on demand.
+        - Deployment: A higher-level object that manages ReplicaSets and provides declarative updates to the pods and ReplicaSets in the cluster.
+        - ConfigMap: A configuration store that holds configuration data in key-value pairs.
+        - Secret: A secure way to store and manage sensitive information such as passwords, API keys, and certificates.
+        - Volume: A directory that is accessible to the containers running in a pod. Volumes can be used to store data or share files between containers
