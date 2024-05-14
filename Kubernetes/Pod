@@ -1,0 +1,10 @@
+containers are encapsulated into a K8 object known as POD. 
+a pod is the single instance of an application.
+it is the smallest object in K8.
+
+one pod can have multiple containers.
+
+how to deploy POD
+    - kubectl run nginx --image nginx
+    - kubectl get pods
+    

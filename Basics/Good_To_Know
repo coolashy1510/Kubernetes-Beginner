@@ -1,0 +1,16 @@
+What is a container:
+- A container is simply like a software unit/wrapper that will package everything - your application code, app related dependencies etc. together.
+- You can assume like you get a portable environment to easily run your application. You can easily manage the container on your own (operations like starting, stopping, monitoring etc.).
+
+Orchestration:
+- A Container Orchestration tool or framework can help you in such situations. It can help you automate all the deployment/management overhead.
+- Once such Container Orchestration tool is Kubernetes
+
+Kubernetes:
+- Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of 
+ containerized applications.
+- It provides a set of abstractions and APIs for managing containers, so you can focus on building your application and not worryabout the underlying infrastructure.
+- With Kubernetes, you can manage multiple containers across multiple machines, making it easier to streamline and automate the deployment and management of your application infrastructure.
+- Kubernetes is fast becoming the de facto standard for container orchestration in the cloud-native ecosystem.
+
+![Kubernetes Architecture](image.png)
